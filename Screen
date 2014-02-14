@@ -1,3 +1,4 @@
+
 import java.awt.*;
 
 public class Screen {
@@ -13,14 +14,15 @@ public class Screen {
 	//Width
 	public int getScreenHeight()
 	{
-		int y = dim.height;
+		int y = (int)(dim.height / 1.5);
 		return y;
 	}
 	
 	//Height
 	public int getScreenWidth()
 	{
-		int x = dim.width;
+		int x = (int)(dim.width/2.55);
 		return x;
 	}
 }
+
