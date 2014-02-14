@@ -45,10 +45,12 @@ public class SpaceFrame extends JFrame implements ActionListener{
 		dPnl1 = new MyDrawPanel();
 		dPnl1.setLayout(null);
 		
+		Screen screen = new Screen();
+		
 		this.add(dPnl1);
 		this.addKeyListener(new AL());
 		this.setFocusable(true);
-		this.setSize(625, 625);
+		this.setSize(screen.getScreenWidth(), screen.getScreenHeight());
 		this.setVisible(true);
 		this.setResizable(false);
 		this.setLocation(200, 200);
